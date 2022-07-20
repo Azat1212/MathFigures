@@ -1,0 +1,15 @@
+Есть таблица продуктов Products:
+id, name, id_category
+
+Есть таблица групп категорий Сategory:
+id, name
+
+SELECT p.name, c.name
+FROM Products p
+JOIN Сategory c ON p.id_category = c.id
+
+UNION 
+
+SELECT p.name, c.name
+FROM Products p
+LEFT JOIN Сategory c ON p.id_category = c.id
